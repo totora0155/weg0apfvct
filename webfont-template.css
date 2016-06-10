@@ -36,6 +36,6 @@
 
 <% _.forEach(glyphs, glyph => { %>
   .<%=className%><%=connectionToken%><%=glyph.name%>:before {
-    content: "\<%=glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase()%>"
+    content: "\<%=glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase()%>";
   }
 <% }); %>
